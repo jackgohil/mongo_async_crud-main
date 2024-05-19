@@ -8,11 +8,9 @@ const corsOptions = {
     //         callback(new Error('Not allowed by CORS'));
     //     }
     // },
-        origin: true, // Allow all origins
-        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Explicitly allow these methods, though all methods are allowed by default
-        optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
-
-    
+    origin: '*', // Allow all origins
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    optionsSuccessStatus: 200,
 }
 
 module.exports = corsOptions;
